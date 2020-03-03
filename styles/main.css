@@ -6,6 +6,11 @@ html {
   height: 100%;
 } 
 
+.imgex { 
+  width: 35%; 
+  margin: 75px 0px 0px 0px;
+}
+
 h1 {
     color: #ffffff;
     font-family: 'Lobster', Arial, Helvetica, sans-serif;
@@ -48,6 +53,12 @@ body {
 @media only screen and (max-width: 768px) {
   /* For mobile phones and tablets: */
   [class*="col-"] {
+    width: 100%;
+  }
+
+  .imgex { width: 75%; }
+
+  #loginForm {
     width: 100%;
   }
 }
