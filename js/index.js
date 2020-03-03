@@ -12,6 +12,7 @@ function validateLogin() {
     if ((emailEntered === "") | (passwordEntered === "")) {
             document.getElementById("loginErrorPlaceholder").textContent = "Username and/or password cannot be empty.";
     } else {
-        alert("Page should redirect here.")
+        /*alert("Page should redirect here.")*/
+        window.location.href = "dashboard.html";
     }
 }

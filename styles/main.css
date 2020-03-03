@@ -8,7 +8,7 @@ html {
 
 .imgex { 
   width: 35%; 
-  margin: 75px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
 }
 
 h1 {
@@ -34,6 +34,10 @@ body {
   background-attachment: fixed;
 }
 
+footer {
+  color: black;
+}
+
 #frontPageIntro {
   text-align: center;
 }
@@ -48,6 +52,23 @@ body {
 #loginErrorPlaceholder {
   color: red;
   padding: 5px;
+}
+
+#cardContainer {
+  width: 30%;
+  margin: 100px auto;
+  justify-content: center;
+  color: black;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+.card-img-top {
+  width: 100%;
+  
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 768px) {
