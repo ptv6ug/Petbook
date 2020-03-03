@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
-} 
+}
 
 html {
   height: 100%;
-} 
+}
 
-.imgex { 
-  width: 35%; 
+.imgex {
+  width: 35%;
   margin: 100px 0px 0px 0px;
 }
 
@@ -25,9 +25,9 @@ body {
   height: 100%;
   margin: 0;
   color: #ffffff;
-  /* 
+  /*
   Source for linear gradient background CSS:
-  https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats 
+  https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats
   */
   background-image: linear-gradient(#008B8B, #00FFFF);
   background-repeat: no-repeat;
@@ -67,9 +67,24 @@ footer {
 
 .card-img-top {
   width: 100%;
-  
+
   object-fit: cover;
 }
+
+.like-btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 9.5px 10px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.like-btn:hover {opacity: 1}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones and tablets: */
