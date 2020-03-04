@@ -49,6 +49,10 @@ footer {
   color: black;
 }
 
+#commentSection {
+  padding-top: 25px;
+}
+
 #loginErrorPlaceholder {
   color: red;
   padding: 5px;
@@ -65,26 +69,21 @@ footer {
   margin-bottom: 50px;
 }
 
+.card-title {
+  padding-top: 10px;
+}
+
 .card-img-top {
   width: 100%;
-
   object-fit: cover;
 }
 
-.like-btn {
+#like-btn {
   background-color: #f4511e;
-  border: none;
-  color: white;
-  padding: 9.5px 10px;
-  text-align: center;
-  font-size: 14px;
-  margin: 4px 2px;
-  opacity: 0.6;
   transition: 0.3s;
-  border-radius: 5px;
 }
 
-.like-btn:hover {opacity: 1}
+#like-btn:hover {background-color: #d64518;}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones and tablets: */
