@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Pauline Vu & Ryan Riley">
         <!-- <meta name="keywords" content="define keywords for search engines"> -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
         <title>Timeline</title>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
-    <body onload="setFocus()">
+    <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,9 +42,12 @@
             <!-- 3 hard-coded pet cards -->
             <!-- card #1 -->
             <div class="card">
-                <img src="images/jae-park-7GX5aICb5i4-unsplash.jpg" class="card-img-top" alt="...">
+                <img src="images/jae-park-7GX5aICb5i4-unsplash.jpg" class="card-img-top" alt="meowing cat">
                 <div class="card-body">
-                  <input type="button" class="like-btn" value="Like" onclick="increaseLike1()" <p>  Likes: <a id="likes1">0</a></p>
+                  <button type="button" class="btn btn-secondary" id="like-btn" value="Like" onclick="increaseLike1()">
+                    <span class="fa fa-heart"></span>
+                  </button>
+                  <a id="likes1">0</a> likes
                   <h5 class="card-title">she screm</h5>
                   <p class="card-text">Cookie is screaming at me because I didn't feed her since 20 minutes ago.</p>
                   <a href="detailCookieExample.html" class="btn btn-primary">Add a comment</a>
@@ -52,9 +56,12 @@
             </div>
             <!-- card #2 -->
             <div class="card">
-                <img src="images/alan-king-KZv7w34tluA-unsplash.jpg" class="card-img-top" alt="...">
+                <img src="images/alan-king-KZv7w34tluA-unsplash.jpg" class="card-img-top" alt="dog with sunglasses">
                 <div class="card-body">
-                  <input type="button" class="like-btn" value="Like" onclick="increaseLike2()" <p>Likes: <a id="likes2">0</a></p></input>
+                  <button type="button" class="btn btn-secondary" id="like-btn" value="Like" onclick="increaseLike2()">
+                    <span class="fa fa-heart"></span>
+                  </button>
+                  <a id="likes2">0</a> likes
                   <h5 class="card-title">Looking good and feeling good!</h5>
                   <p class="card-text">Took Doug to the dog park today. He got lots of pets.</p>
                   <a href="#" class="btn btn-primary">Add a comment</a>
@@ -64,9 +71,12 @@
             </div>
             <!-- card #3 -->
             <div class="card">
-                <img src="images/martin-moreno-54yOfgVKdqs-unsplash.jpg" class="card-img-top" alt="...">
+                <img src="images/martin-moreno-54yOfgVKdqs-unsplash.jpg" class="card-img-top" alt="dog by the beach">
                 <div class="card-body">
-                  <input type="button" class="like-btn" value="Like" onclick="increaseLike3()" <p>  Likes: <a id="likes3">0</a></p>
+                  <button type="button" class="btn btn-secondary" id="like-btn" value="Like" onclick="increaseLike3()">
+                    <span class="fa fa-heart"></span>
+                  </button>
+                  <a id="likes3">0</a> likes
                   <h5 class="card-title">my sweetie at the beach</h5>
                   <p class="card-text">look at him he's so freaking cute</p>
                   <a href="#" class="btn btn-primary">Add a comment</a>

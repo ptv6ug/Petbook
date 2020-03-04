@@ -40,16 +40,28 @@
             <!-- Cookie's hard-coded card -->
             <!-- card #1 -->
             <div class="card">
-                <img src="images/jae-park-7GX5aICb5i4-unsplash.jpg" class="card-img-top" alt="...">
+                <img src="images/jae-park-7GX5aICb5i4-unsplash.jpg" class="card-img-top" alt="meowing cat">
                 <div class="card-body">
+                  <a id="likes1">0</a> likes
                   <h5 class="card-title">she screm</h5>
                   <p class="card-text">Cookie is screaming at me because I didn't feed her since 20 minutes ago.</p>
                 </div>
                 <div class="card-footer text-muted">Posted 2 minutes ago</div>
             </div>
-            <!-- Comment section -->
-            <div class="comment" id="commentForm">
-              
+            <!-- Add a Comment Form -->
+            <div>
+              <form name="commentForm">
+                <div class="form-group">
+                  <input type="text" id="inputComment" class="form-control" name="comment" placeholder="Type your comment here..."/>
+                  <span class="error" id="inputCommentError"></span>
+                </div>
+                <input type="button" class="btn btn-primary" value="Add a Comment" onclick="addComment1()"/>
+              </form> 
+            </div>
+            <!-- Comments section -->
+            <div id="commentSection">
+              <p style="font-weight: bold;"><a id="commentsCount1">0</a> comments</p>
+              <table id="commentsTable1" class="table table-striped"></table>
             </div>
         </div>
 
