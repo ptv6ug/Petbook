@@ -2,19 +2,23 @@ function test() {
     alert("This is a JS test.")
 }
 
-function setFocus() {
-    document.getElementById("inputEmail").focus();
-  }
+function loginSetFocus() {
+  document.getElementById("inputEmail").focus();
+}
+
+function createPostSetFocus() {
+  document.getElementById("inputTitle").focus();
+}  
 
 function validateLogin() {
-    var emailEntered = document.getElementById("inputEmail").value;
-    var passwordEntered = document.getElementById("inputPassword").value;
-    if ((emailEntered === "") | (passwordEntered === "")) {
-            document.getElementById("loginErrorPlaceholder").textContent = "Username and/or password cannot be empty.";
-    } else {
-        /*alert("Page should redirect here.")*/
-        window.location.href = "dashboard.html";
-    }
+  var emailEntered = document.getElementById("inputEmail").value;
+  var passwordEntered = document.getElementById("inputPassword").value;
+  if ((emailEntered === "") | (passwordEntered === "")) {
+          document.getElementById("loginErrorPlaceholder").textContent = "Username and/or password cannot be empty.";
+  } else {
+      /*alert("Page should redirect here.")*/
+      window.location.href = "dashboard.html";
+  }
 }
 
 var likes1 = 0;

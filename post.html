@@ -10,10 +10,10 @@
         <link rel="stylesheet" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <title>Share a photo</title>
+        <title>Share a Photo</title>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
-    <body onload="setFocus()">
+    <body onload="createPostSetFocus()">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,32 +39,28 @@
         </header>
 
         <div class="container" id="postContainer">
-
             <h1>Share a photo</h1><br>
-
-            <div class="card" id = "postCard">
               <form name="postForm">
 
                 <!-- Select a photo button-->
                 <a href="#" class="btn btn-primary">Select a Photo</a><br><br>
 
                 <!-- Title text area-->
-                  <div class="form-group">
-                    <label for="inputTitle">Provide a Title</label><br>
-                    <textarea name="inputTitle" rows="2" cols="56" placeholder="Title here"></textarea>
-                  </div>
+                <div class="form-group">
+                  <label for="inputTitle">Provide a Title</label><br>
+                  <textarea name="inputTitle" rows="1" id="inputTitle" style="width: 100%" placeholder="Title here"></textarea>
+                </div>
 
-                  <!-- Caption text area-->
-                  <div class="form-group">
-                    <label for="inputCaption">Provide a Caption</label><br>
-                    <textarea name="inputCaption" rows="8" cols="56" placeholder="Caption here"></textarea>
-                  </div>
+                <!-- Caption text area-->
+                <div class="form-group">
+                  <label for="inputCaption">Provide a Caption</label><br>
+                  <textarea name="inputCaption" rows="8"  id="inputCaption" style="width: 100%" placeholder="Caption here"></textarea>
+                </div>
 
-                  <!--Post button-->
-                  <a href="dashboard.html" class="btn btn-primary" id = "postButton">Post!</a>
-
+                <!--Post button-->
+                <a href="dashboard.html" class="btn btn-success">Post!</a>
+              
               </form>
-            </div>
         </div>
 
         <footer>

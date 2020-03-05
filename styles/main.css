@@ -68,7 +68,6 @@ footer {
 
 .card-img-top {
   width: 100%;
-
   object-fit: cover;
 }
 
@@ -93,34 +92,6 @@ footer {
   margin: 100px auto;
   justify-content: center;
   color: black;
-}
-
-#inputTitle {
-  font-size: 14pt;
-  height: 100px;
-}
-
-#postButton {
-  background-color: #006400;
-  border: none;
-  color: white;
-  padding: 9.5px 10px;
-  text-align: center;
-  font-size: 14px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  border-radius: 5px;
-}
-
-#postButton:hover {opacity: 1}
-
-#postCard {
-  color: #FFFFFF;
-  border: none;
-  background-image: linear-gradient(#008B8B, #00FFFF);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .divider{
