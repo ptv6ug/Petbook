@@ -36,6 +36,8 @@ body {
 
 footer {
   color: black;
+  position: fixed;
+  bottom: 0px;
 }
 
 #frontPageIntro {
@@ -47,6 +49,11 @@ footer {
   width: 50%;
   justify-content: center;
   color: black;
+}
+
+#postForm {
+  justify-content: center;
+  width: 50%;
 }
 
 #loginErrorPlaceholder {
@@ -109,6 +116,14 @@ footer {
   .imgex { width: 75%; }
 
   #loginForm {
+    width: 100%;
+  }
+
+  #cardContainer {
+    width: 100%;
+  }
+
+  #postForm {
     width: 100%;
   }
 }
