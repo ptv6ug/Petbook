@@ -2,10 +2,6 @@ function test() {
     alert("This is a JS test.")
 }
 
-function setFocus() {
-    document.getElementById("inputEmail").focus();
-  }
-
 function loginSetFocus() {
   document.getElementById("inputEmail").focus();
 }
