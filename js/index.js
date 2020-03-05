@@ -3,8 +3,8 @@ function test() {
 }
 
 function setFocus() {
-  document.getElementById("inputEmail").focus();
-}
+    document.getElementById("inputEmail").focus();
+  }
 
 function loginSetFocus() {
   document.getElementById("inputEmail").focus();
