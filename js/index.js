@@ -6,6 +6,14 @@ function setFocus() {
     document.getElementById("inputEmail").focus();
   }
 
+function loginSetFocus() {
+  document.getElementById("inputEmail").focus();
+}
+
+function createPostSetFocus() {
+  document.getElementById("inputTitle").focus();
+}  
+
 function validateLogin() {
     var emailEntered = document.getElementById("inputEmail").value;
     var passwordEntered = document.getElementById("inputPassword").value;

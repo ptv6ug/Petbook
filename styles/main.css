@@ -36,6 +36,8 @@ body {
 
 footer {
   color: black;
+  position: fixed;
+  bottom: 0px;
 }
 
 #frontPageIntro {
@@ -49,8 +51,14 @@ footer {
   color: black;
 }
 
+<<<<<<< HEAD
+#postForm {
+  justify-content: center;
+  width: 50%;
+=======
 #commentSection {
   padding-top: 25px;
+>>>>>>> master
 }
 
 #loginErrorPlaceholder {
@@ -60,6 +68,7 @@ footer {
 
 #cardContainer {
   width: 30%;
+  height: 60%;
   margin: 100px auto;
   justify-content: center;
   color: black;
@@ -85,6 +94,20 @@ footer {
 
 #like-btn:hover {background-color: #d64518;}
 
+#postContainer {
+  width: 40%;
+  height: 60%;
+  margin: 100px auto;
+  justify-content: center;
+  color: black;
+}
+
+.divider{
+    width:7px;
+    height:auto;
+    display:inline-block;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones and tablets: */
   [class*="col-"] {
@@ -94,6 +117,14 @@ footer {
   .imgex { width: 75%; }
 
   #loginForm {
+    width: 100%;
+  }
+
+  #cardContainer {
+    width: 100%;
+  }
+
+  #postForm {
     width: 100%;
   }
 }

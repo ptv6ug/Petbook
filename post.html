@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <title>Login</title>
+        <title>Share a Photo</title>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body onload="setFocus()">
@@ -21,8 +21,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="dashboard.html">Dashboard </a>
@@ -38,30 +38,29 @@
               </nav>
         </header>
 
-        <div class="container" id="frontPageIntro">
-            <img src="images/pets_landing.png" alt="2 cats and 3 dogs" class="imgex">
-            <h1 class="display-1">Petbook</h1>
-            <h4>Share your pets with the world!</h4>
-        </div>
+        <div class="container" id="postForm">
+            <h1>Share a photo</h1><br>
+              <form name="postForm">
 
-        <div class="container" id="loginForm">
-            <form name="loginForm">
+                <!-- Select a photo button-->
+                <a href="#" class="btn btn-primary">Select a Photo</a><br><br>
+
+                <!-- Title text area-->
                 <div class="form-group">
-                  <label for="inputEmailDesc">Email Address</label>
-                  <input type="text" id="inputEmail" class="form-control" name="email" />
-                  <span class="error" id="inputEmailError"></span>
+                  <label for="inputTitle">Provide a Title</label><br>
+                  <textarea name="inputTitle" rows="1" id="inputTitle" style="width: 100%" placeholder="Title here"></textarea>
                 </div>
 
+                <!-- Caption text area-->
                 <div class="form-group">
-                    <label for="inputPasswordDesc">Password</label>
-                    <input type="text" id="inputPassword" class="form-control" name="password" />
-                    <span class="error" id="inputPasswordError"></span>
+                  <label for="inputCaption">Provide a Caption</label><br>
+                  <textarea name="inputCaption" rows="8"  id="inputCaption" style="width: 100%" placeholder="Caption here"></textarea>
                 </div>
 
-                <div id="loginErrorPlaceholder"></div>
-
-                <input type="button" class="btn btn-light" value="Login" onclick="validateLogin()"/>
-            </form>
+                <!--Post button-->
+                <a href="dashboard.html" class="btn btn-success">Post!</a>
+              
+              </form>
         </div>
 
         <footer>
